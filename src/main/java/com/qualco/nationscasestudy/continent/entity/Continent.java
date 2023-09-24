@@ -6,14 +6,18 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.io.Serializable;
 
 @Entity
 @Table(name = "continents")
 @Getter
 @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Continent {
+@NoArgsConstructor
+public class Continent  implements Serializable  {
 
     @Id
     @EqualsAndHashCode.Include

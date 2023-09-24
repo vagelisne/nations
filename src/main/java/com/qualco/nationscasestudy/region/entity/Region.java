@@ -10,13 +10,17 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.io.Serializable;
 
 @Entity
 @Table(name = "regions")
 @Getter @Setter
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class Region {
+@NoArgsConstructor
+public class Region implements Serializable {
 
     @Id
     @EqualsAndHashCode.Include
