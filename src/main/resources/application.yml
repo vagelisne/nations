@@ -1,0 +1,5 @@
+spring:
+    datasource:
+        url: "jdbc:mariadb://localhost:3306/nation"
+        username: "root"
+        password: ")I]O5=T<8~zV74j" #must not be hardcoded
